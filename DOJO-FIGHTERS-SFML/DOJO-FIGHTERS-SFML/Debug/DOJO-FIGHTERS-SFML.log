@@ -1,0 +1,12 @@
+﻿  main.cpp
+c:\users\sergi\source\repos\dojo-fighters-sfml\dojo-fighters-sfml\main.cpp(18): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\sergi\source\repos\dojo-fighters-sfml\dojo-fighters-sfml\main.cpp(19): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
+          with
+          [
+              T=unsigned int
+          ]
+  DOJO-FIGHTERS-SFML.vcxproj -> C:\Users\sergi\source\repos\DOJO-FIGHTERS-SFML\Debug\DOJO-FIGHTERS-SFML.exe
