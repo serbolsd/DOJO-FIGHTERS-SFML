@@ -1,0 +1,6 @@
+# Intermediate Files
+intermediate/
+./lib/
+
+# Visual Stuff
+.vs
