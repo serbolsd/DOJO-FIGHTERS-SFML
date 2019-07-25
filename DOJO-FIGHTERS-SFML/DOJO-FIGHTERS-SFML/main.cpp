@@ -1,6 +1,7 @@
 #include <Graphics.hpp>
 #include <Window.hpp>
 #include <iostream>
+//PRUEBA
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(1920,1080),"win");
