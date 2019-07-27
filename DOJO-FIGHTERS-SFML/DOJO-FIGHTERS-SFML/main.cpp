@@ -128,15 +128,16 @@ void checkControls()
 				std::cout << "\nnot has R axis";
 			}
 			std::cout << "\n";
+			for (int j = 0; j < buttonCount; j++)
+			{
+				if (sf::Joystick::isButtonPressed(i, j))
+				{
+					std::cout << "button " << j << " \n";
+				}
+			}
 		}
 		else
 			std::cout << "joystick " << i + 1 << " not connected\n";
-		for (int j = 0; j < buttonCount; j++)
-		{
-			if (sf::Joystick::isButtonPressed(i, j))
-			{
-				std::cout << "button " << j << " \n";
-			}
-		}
+	
 	}
 }
