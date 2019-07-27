@@ -4,24 +4,19 @@ Movimiento::Movimiento(){}
 
 Movimiento::~Movimiento(){}
 
-void Movimiento::Move(Jugador Player)
+void Movimiento::Move(CJugador Player)
 {
-	/*
-	Player.MyPos = Player.Direction * Player.Character.Speed;
-	*/
+	Player.MyPos = Player.MyDir * Player.Character.Speed;
 }
 
-void Movimiento::Dash(Jugador Player)
+void Movimiento::Dash(CJugador Player)
 {
-	/*
-	Player.MyPos = Player.Direction * Player.Character.Speed_Dash;
-	*/
+	Player.MyPos = Player.MyDir * Player.Character.Speed_Dash;
 }
 
-void Movimiento::WatchOponent(Jugador Player, Jugador Enemy)
+void Movimiento::WatchOponent(CJugador Player, Objetive Enemy)
 {
-	/*
-	if(Player.MyPos.x < MyObjective.MyPos.x)
+	if(Player.MyPos.x < Enemy.MyPos.x)
 	{
 		Player.PlayerSprite.scale(1, 1);
 	}
@@ -29,5 +24,4 @@ void Movimiento::WatchOponent(Jugador Player, Jugador Enemy)
 	{
 		Player.PlayerSprite.scale(-1, 1);
 	}
-	*/
 }
