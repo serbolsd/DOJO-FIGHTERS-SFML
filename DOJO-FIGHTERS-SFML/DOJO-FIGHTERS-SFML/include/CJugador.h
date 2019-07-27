@@ -7,8 +7,6 @@ class CJugador : public Objetive
 public:
 	CJugador();
 	~CJugador();
-	sf::Vector2f MyPos;
-	sf::Vector2f MyDir;
 protected:	
 
 	void OnInit();

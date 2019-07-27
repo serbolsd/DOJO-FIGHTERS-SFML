@@ -6,17 +6,17 @@ Movimiento::~Movimiento(){}
 
 void Movimiento::Move(CJugador Player)
 {
-	Player.MyPos = Player.MyDir * Player.Character.Speed;
+	Player.Position = Player.Direccion * Player.Character.Speed;
 }
 
 void Movimiento::Dash(CJugador Player)
 {
-	Player.MyPos = Player.MyDir * Player.Character.Speed_Dash;
+	Player.Position = Player.Direccion * Player.Character.Speed_Dash;
 }
 
 void Movimiento::WatchOponent(CJugador Player, Objetive Enemy)
 {
-	if(Player.MyPos.x < Enemy.MyPos.x)
+	if(Player.Position.x < Enemy.Position.x)
 	{
 		Player.PlayerSprite.scale(1, 1);
 	}
