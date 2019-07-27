@@ -22,12 +22,18 @@
     <ClCompile Include="source\Camera.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="source\PlayManager.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Window.h">
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="include\Camera.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PlayManager.h">
       <Filter>Header</Filter>
     </ClInclude>
   </ItemGroup>
