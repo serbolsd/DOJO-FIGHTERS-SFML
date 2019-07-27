@@ -1,6 +1,8 @@
 #include <Graphics.hpp>
 #include <Window.hpp>
 #include <iostream>
+#include "include/Barras.h"
+
 //PRUEBA
 void checkControls();
 int main()
@@ -11,7 +13,10 @@ int main()
 	sf::Texture mikuTexture;
 	sf::Vector2u mikuSize;
 
+	Barras lifeBar;
+	lifeBar.onInit(1000, 50, sf::Vector2f(50,50));
 
+	
 
 
 	if (!mikuTexture.loadFromFile("resources\\image\\miku.png"))
@@ -38,6 +43,8 @@ int main()
 		checkControls();
 		window.clear(sf::Color(0, 0, 0, 0));
 		window.draw(mikuSprite);
+		lifeBar.update();
+		lifeBar.draw(window);
 		window.display();
 	}
 	return 0;
