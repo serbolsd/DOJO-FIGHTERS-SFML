@@ -1,5 +1,4 @@
-#include "../DOJO-FIGHTERS-SFML/Header/CartelMamalon.h"
-#include "CartelMamalon.h"
+#include "../include/CartelMamalon.h"
 
 void CartelMamalon::OnInit(float Alto, float Ancho, sf::Vector2f Position)
 {

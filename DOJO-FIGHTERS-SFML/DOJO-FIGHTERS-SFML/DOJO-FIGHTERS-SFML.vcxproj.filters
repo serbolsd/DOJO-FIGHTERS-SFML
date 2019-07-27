@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{07dcad3e-96ce-4601-8d03-0dfd01cb2019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{1c8c2769-63ae-414d-8296-cd2a43e400f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Window.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Camera.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PlayManager.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Barras.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CartelMamalon.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Movimiento.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objetive.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\QuadCollider.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CAttack.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Window.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Camera.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PlayManager.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Barras.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CartelMamalon.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Movimiento.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objetive.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\QuadCollider.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAttack.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
