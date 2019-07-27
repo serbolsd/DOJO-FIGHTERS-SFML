@@ -6,6 +6,4 @@ class  Objetive {
 	 //QuadCollider Collider;
 	 //QuadCollider AttackCollider
 	 sf::Vector2f Position;
-
-
 };
