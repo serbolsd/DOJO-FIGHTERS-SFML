@@ -126,6 +126,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Source\Barras.cpp" />
+    <ClCompile Include="source\Camera.cpp" />
+    <ClCompile Include="Source\CartelMamalon.cpp" />
+    <ClCompile Include="Source\CAttack.cpp" />
+    <ClCompile Include="Source\Movimiento.cpp" />
+    <ClCompile Include="Source\Objetive.cpp" />
+    <ClCompile Include="source\PlayManager.cpp" />
+    <ClCompile Include="Source\QuadCollider.cpp" />
+    <ClCompile Include="source\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Barras.h" />
+    <ClInclude Include="include\Camera.h" />
+    <ClInclude Include="include\CartelMamalon.h" />
+    <ClInclude Include="include\CAttack.h" />
+    <ClInclude Include="include\Movimiento.h" />
+    <ClInclude Include="include\Objetive.h" />
+    <ClInclude Include="include\PlayManager.h" />
+    <ClInclude Include="include\QuadCollider.h" />
+    <ClInclude Include="include\Resources.h" />
+    <ClInclude Include="include\Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

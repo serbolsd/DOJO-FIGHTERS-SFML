@@ -16,5 +16,64 @@
     <ClCompile Include="main.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="source\Window.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Camera.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PlayManager.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Barras.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CartelMamalon.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Movimiento.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objetive.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\QuadCollider.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CAttack.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Window.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Camera.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PlayManager.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Barras.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CartelMamalon.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Movimiento.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Objetive.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\QuadCollider.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAttack.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resources.h">
+      <Filter>Header</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
