@@ -130,6 +130,7 @@
     <ClCompile Include="source\Camera.cpp" />
     <ClCompile Include="Source\CartelMamalon.cpp" />
     <ClCompile Include="Source\CAttack.cpp" />
+    <ClCompile Include="Source\CJugador.cpp" />
     <ClCompile Include="Source\Movimiento.cpp" />
     <ClCompile Include="Source\Objetive.cpp" />
     <ClCompile Include="source\PlayManager.cpp" />
@@ -141,6 +142,7 @@
     <ClInclude Include="include\Camera.h" />
     <ClInclude Include="include\CartelMamalon.h" />
     <ClInclude Include="include\CAttack.h" />
+    <ClInclude Include="include\CJugador.h" />
     <ClInclude Include="include\Movimiento.h" />
     <ClInclude Include="include\Objetive.h" />
     <ClInclude Include="include\PlayManager.h" />

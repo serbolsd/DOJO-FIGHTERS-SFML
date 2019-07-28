@@ -7,15 +7,17 @@ class Barras{
 		//---Miembros
 
 		float porcentaje;
+		float porcentajeMax;
 		//Declaración del vector
 		sf::Vector2f tamaño, m_pos;
 		//Declaración de la barra vacia
 		sf::RectangleShape Barrita;
+		sf::RectangleShape Barritafondo;
 	
 		//---Metodos
 	public:
 		//Función para poder igualar los datos recibidos
-		void onInit(float xBar, float yBar, sf::Vector2f pos);
+		void onInit(float largo, float alto, sf::Vector2f pos,float porIni, float porMax);
 		//Función para poder declarar en pantalla las barras de vida en ese momento
 		void update();	
 		void draw(sf::RenderWindow & wnd);

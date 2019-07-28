@@ -1,39 +1,16 @@
 #pragma once
 #include "../SFML/System/Vector2.hpp"
-class Jugador
-{
-public:
-	Jugador();
-	~Jugador();
+#include "../include/CJugador.h"
 
-	bool IsKO;
-	bool IsHit;
-	
-	sf::Vector2f MyPos;
-	float MaxDashTime;
-	float CurrDashTime;
-
-private:
-
-};
-
-Jugador::Jugador()
-{
-}
-
-Jugador::~Jugador()
-{
-}
-
-class Movimiento
+class Movimiento : public CJugador
 {
 public:
 	Movimiento();
 	~Movimiento();
 
-	static void Move(Jugador Player);
-	static void Dash(Jugador Player);
-	static void WatchOponent(Jugador Player, Jugador Enemy);
+	static void Move(CJugador Player);
+	static void Dash(CJugador Player);
+	static void WatchOponent(CJugador Player, Objetive Enemy);
 
 private:
 
