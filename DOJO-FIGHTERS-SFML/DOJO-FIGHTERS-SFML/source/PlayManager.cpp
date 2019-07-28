@@ -11,6 +11,8 @@ playManager::playManager(const float & width, const float & height)
 	gameWindow->initWindow(1920,1080,"DOJO-FIGHTERS");
 	gameWindow->getWindow()->setView(*camara->getView());
 	events = new sf::Event;
+	jugador1 = new CJugador;
+	jugador1->OnInit();
 }
 
 playManager::~playManager()
@@ -22,6 +24,8 @@ void playManager::onFinish()
 	gameWindow->onDelete();
 	delete gameWindow;
 	delete events;
+	jugador1->OnDelete();
+	delete jugador1;
 }
 
 void playManager::playGame(const float & width, const float & height)
@@ -56,9 +60,13 @@ void playManager::gameLoop()
 void playManager::onUpdate()
 {
 	//aqui van todos los updates
+	jugador1->OnUpdate();
 }
 
 void playManager::onRender()
 {
 	//aqui van todos los draw/render
+	gameWindow->getWindow()->clear(sf::Color(0,0,255));
+	jugador1->Draw(*gameWindow->getWindow());
+	gameWindow->getWindow()->display();
 }
