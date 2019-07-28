@@ -125,6 +125,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CCollisionManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Source\Barras.cpp" />
     <ClCompile Include="source\Camera.cpp" />
@@ -142,6 +143,7 @@
     <ClInclude Include="include\Camera.h" />
     <ClInclude Include="include\CartelMamalon.h" />
     <ClInclude Include="include\CAttack.h" />
+    <ClInclude Include="include\CCollisionManager.h" />
     <ClInclude Include="include\CJugador.h" />
     <ClInclude Include="include\Movimiento.h" />
     <ClInclude Include="include\Objetive.h" />
