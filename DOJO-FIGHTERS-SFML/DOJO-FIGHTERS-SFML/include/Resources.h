@@ -1,5 +1,4 @@
 #pragma once
-
 enum Attack_ID
 {
 	ID_LightAttack,
@@ -8,7 +7,7 @@ enum Attack_ID
 	ID_SpecialHeavy,
 	ID_SupremeAttack
 };
- 
+
 enum Collider_ID
 {
 	ID_LightCollider,

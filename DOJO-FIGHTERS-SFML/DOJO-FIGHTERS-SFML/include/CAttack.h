@@ -1,28 +1,25 @@
 #pragma once
-//#include <../SFML/Graphics.hpp>
-//#include <../SFML/Window.hpp>
-#include "Resources.h"
+#include <../SFML/Graphics.hpp>
+#include <../SFML/Window.hpp>
+#include "../include/Objetive.h"
+#include "../include/Resources.h"
+#include <iostream>
 
-//TODO:
-//cambiar daño por id
 class CAttack
 {
 public:
 	CAttack();
 	~CAttack();
-	static void OnAttack();
-	//static void OnAttack( & damage, float & delay, Objetivo * objective)
-	static void CheckCollision();
+	void OnAttack(Attack_ID & _attack_id, sf::Time & delay, Objetive & objective);
+	
 	
 private:
-	Attack_ID attack_id;
-	Collider_ID collider_id;
+
+	 Attack_ID attack_id;
+	 Collider_ID collider_id;
+	 sf::Time timeDelayed;
+	 sf::Clock Clock;
 };
 
-CAttack::CAttack()
-{
-}
 
-CAttack::~CAttack()
-{
-}
+
