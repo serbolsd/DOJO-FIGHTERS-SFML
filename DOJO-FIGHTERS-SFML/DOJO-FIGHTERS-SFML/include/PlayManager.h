@@ -3,6 +3,8 @@
 #include "Window.h"
 #include <chrono>
 #include "CJugador.h"
+#include "InputMan.h"
+#include "Movimiento.h"
 class playManager
 {
 public:
@@ -21,5 +23,7 @@ private:
 	sf::Event* events;
 	CCamera *camara;
 	CJugador* jugador1;
+	CJugador* jugador2;
+	inputman * inputmanager;
 };
 

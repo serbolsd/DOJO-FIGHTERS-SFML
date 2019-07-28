@@ -46,6 +46,12 @@
     <ClCompile Include="Source\CJugador.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Controller.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\inputMan.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Window.h">
@@ -79,6 +85,18 @@
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="include\CJugador.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Boxeador.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Karateca.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Controller.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\InputMan.h">
       <Filter>Header</Filter>
     </ClInclude>
   </ItemGroup>

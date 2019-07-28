@@ -4,14 +4,14 @@
 class Character
 {
 public:
-	Character();
+	Character() {};
 	//~Character();
-
+	
 private:
 public:
-	void onInit();
-	void onUpdate();
-	void onDelete();
+	virtual void onInit()=0;
+	virtual void onUpdate()=0;
+	virtual void onDelete()=0;
 	float speed;
 	float Speed_Dash;
 	float damageLight;
@@ -19,24 +19,15 @@ public:
 	float damageSpLight;
 	float damageSpHeavy;
 	float damageSpUltra;
+	float distDash;
+	float timeDash;
 	sf::Time delayLight;
 	sf::Time delayHeavy;
 	sf::Time delaySpLight;
 	sf::Time delaySpHeavy;
 	sf::Time delaySpUltra;
-	QuadCollider collider;
+	QuadCollider* collider;
+	QuadCollider* AttackCollider;
 	sf::Sprite spriteCharacter;
 };
 
-
-inline void Character::onInit()
-{
-}
-
-inline void Character::onUpdate()
-{
-}
-
-inline void Character::onDelete()
-{
-}

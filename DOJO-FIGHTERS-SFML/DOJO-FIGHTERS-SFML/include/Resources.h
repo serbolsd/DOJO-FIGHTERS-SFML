@@ -17,3 +17,16 @@ enum Collider_ID
 	ID_SpecialHeavyCollider,
 	ID_SupremeCollider
 };
+
+enum PivotPos
+{
+	superiorIzquierdo = 0,
+	superiorDerecho,
+	inferiorIzquierdo,
+	inferiorderecho,
+	superiorCentro,
+	inferiorCentro,
+	Centro,
+	centroIzqierdo,
+	centroDerecho
+};

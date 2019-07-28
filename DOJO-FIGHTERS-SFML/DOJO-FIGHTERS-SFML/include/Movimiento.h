@@ -8,9 +8,9 @@ public:
 	Movimiento();
 	~Movimiento();
 
-	static void Move(CJugador Player);
-	static void Dash(CJugador Player);
-	static void WatchOponent(CJugador Player, Objetive Enemy);
+	static void Move(CJugador &Player);
+	static void Dash(CJugador &Player);
+	static void WatchOponent(CJugador &Player, Objetive &Enemy);
 
 private:
 

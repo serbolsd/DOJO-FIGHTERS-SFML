@@ -131,6 +131,8 @@
     <ClCompile Include="Source\CartelMamalon.cpp" />
     <ClCompile Include="Source\CAttack.cpp" />
     <ClCompile Include="Source\CJugador.cpp" />
+    <ClCompile Include="Source\Controller.cpp" />
+    <ClCompile Include="Source\inputMan.cpp" />
     <ClCompile Include="Source\Movimiento.cpp" />
     <ClCompile Include="Source\Objetive.cpp" />
     <ClCompile Include="source\PlayManager.cpp" />
@@ -139,10 +141,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Barras.h" />
+    <ClInclude Include="include\Boxeador.h" />
     <ClInclude Include="include\Camera.h" />
     <ClInclude Include="include\CartelMamalon.h" />
     <ClInclude Include="include\CAttack.h" />
     <ClInclude Include="include\CJugador.h" />
+    <ClInclude Include="include\Controller.h" />
+    <ClInclude Include="include\InputMan.h" />
+    <ClInclude Include="include\Karateca.h" />
     <ClInclude Include="include\Movimiento.h" />
     <ClInclude Include="include\Objetive.h" />
     <ClInclude Include="include\PlayManager.h" />

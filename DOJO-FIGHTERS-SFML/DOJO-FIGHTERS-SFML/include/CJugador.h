@@ -3,6 +3,7 @@
 #include "Objetive.h"
 #include "Character.h"
 #include "Barras.h"
+#include "CartelMamalon.h"
 
 class CJugador : public Objetive
 {
@@ -11,16 +12,24 @@ public:
 	~CJugador();
 public:
 
-	void OnInit();
+	void OnInit(const float & width, const float & height);
 	void OnUpdate();
 	void OnDelete();
 	void Draw(sf::RenderWindow & wnd);
 
-	bool IsKO;
-	bool IsHit;
+	bool IsKO=false;
+	bool IsHit=false;
+	bool IsDashing = false;
 	Character* character;
 	Barras BarStamina;
 	Barras BarAuraDePelea;
+	CartelMamalon* cartel;
+	float timeAction;
+	float travel;
+	int controlID;
+	Objetive *objetive;
+	bool changeSucces=false;
+	//inputManager * inputmanager;
 
 
 private:

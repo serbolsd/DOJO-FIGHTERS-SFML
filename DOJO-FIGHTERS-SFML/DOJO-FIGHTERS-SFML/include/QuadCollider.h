@@ -11,12 +11,13 @@ public:
 	void setPos(sf::Vector2f pos);
 	void draw(sf::RenderWindow & gamewindow);
 	sf::Vector2f getPos() {return position;};
-	sf::Vector2f getSize() {return size;};
+	sf::Vector2f getSize() {return m_size;};
 	bool isVisible = true;
 	bool Enable = true;
 private:
-	sf::Vector2f size;
+	sf::Vector2f m_size;
 	sf::Vector2f position;
-	sf::RectangleShape collider;
+	sf::RectangleShape *collider=nullptr;
+	sf::RectangleShape colision;
 	
 };

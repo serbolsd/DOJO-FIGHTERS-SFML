@@ -8,22 +8,34 @@ CJugador::~CJugador()
 {
 }
 
-void CJugador::OnInit()
+void CJugador::OnInit(const float & width, const float & height)
 {
-	BarStamina.onInit(1920/15, 1080 / 2.5, sf::Vector2f(0, 0), 50, 100);
+	Position = new sf::Vector2f;
+	Direccion=new sf::Vector2f;
 }
 
 void CJugador::OnUpdate()
 {
 	BarStamina.update();
+	BarAuraDePelea.update();
+	cartel->OnUpdate();
+	character->spriteCharacter.setPosition(*Position);
+	Collider->setPos(*Position);
+	AttackCollider->setPos(*Position);
 }
 
 void CJugador::OnDelete()
 {
 	delete character;
+	delete cartel;
 }
 
 void CJugador::Draw(sf::RenderWindow & wnd)
 {
 	BarStamina.draw(wnd);
+	BarAuraDePelea.draw(wnd);
+	cartel->Draw(wnd);
+	Collider->draw(wnd);
+	AttackCollider->draw(wnd);
+	wnd.draw(character->spriteCharacter);
 }

@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "Resources.h"
 
 class Barras{
 
@@ -13,6 +14,7 @@ class Barras{
 		//Declaración de la barra vacia
 		sf::RectangleShape Barrita;
 		sf::RectangleShape Barritafondo;
+		sf::Vector2f newSize;
 	
 		//---Metodos
 	public:
@@ -21,4 +23,6 @@ class Barras{
 		//Función para poder declarar en pantalla las barras de vida en ese momento
 		void update();	
 		void draw(sf::RenderWindow & wnd);
+		void setPivot(PivotPos tipe);
+		//void setPosition();
 };

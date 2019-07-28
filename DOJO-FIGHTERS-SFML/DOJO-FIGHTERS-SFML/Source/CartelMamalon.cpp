@@ -1,17 +1,28 @@
 #include "../include/CartelMamalon.h"
 
-void CartelMamalon::OnInit(float Alto, float Ancho, sf::Vector2f Position)
+void CartelMamalon::OnInit( float Ancho, float Alto, sf::Vector2f inPosition)
 {
-	 PosicionDelCartel.x= Position.x;
-	 PosicionDelCartel.y = Position.y;
-	 TamañoDelCartel.x = Ancho/16;
-	 TamañoDelCartel.y = Alto/3;
+	 PosicionDelCartel.x= inPosition.x;
+	 PosicionDelCartel.y = inPosition.y;
+	 TamañoDelCartel.x = Ancho;
+	 TamañoDelCartel.y = Alto;
 	 Cartelito.setSize(TamañoDelCartel);
 	 Cartelito.setPosition(PosicionDelCartel);
+	 Position = new sf::Vector2f(inPosition);
+	 Collider = new QuadCollider;
+	 Collider->initCollider(TamañoDelCartel);
+	 Collider->setPos(inPosition);
+}
+
+void CartelMamalon::Draw(sf::RenderWindow & wnd)
+{
+	wnd.draw(Cartelito);
 }
 
 void CartelMamalon::OnUpdate()
 {
+
+	Cartelito.setPosition(PosicionDelCartel);
 	CartelColor();
 }
 
@@ -43,4 +54,40 @@ void CartelMamalon::CartelColor()
 	}
 
 
+}
+
+void CartelMamalon::setPivot(PivotPos tipe)
+{
+	switch (tipe)
+	{
+	case superiorIzquierdo:
+		Cartelito.setOrigin(0, 0);
+		break;
+	case superiorDerecho:
+		Cartelito.setOrigin(TamañoDelCartel.x, 0);
+		break;
+	case inferiorIzquierdo:
+		Cartelito.setOrigin(0, TamañoDelCartel.y);
+		break;
+	case inferiorderecho:
+		Cartelito.setOrigin(TamañoDelCartel.x, TamañoDelCartel.y);
+		break;
+	case superiorCentro:
+		Cartelito.setOrigin(TamañoDelCartel.x / 2, 0);
+		break;
+	case inferiorCentro:
+		Cartelito.setOrigin(TamañoDelCartel.x / 2, TamañoDelCartel.y);
+		break;
+	case Centro:
+		Cartelito.setOrigin(TamañoDelCartel.x / 2, TamañoDelCartel.y / 2);
+		break;
+	case centroIzqierdo:
+		Cartelito.setOrigin(0, TamañoDelCartel.y / 2);
+		break;
+	case centroDerecho:
+		Cartelito.setOrigin(TamañoDelCartel.x, TamañoDelCartel.y / 2);
+		break;
+	default:
+		break;
+	}
 }
