@@ -139,10 +139,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Barras.h" />
+    <ClInclude Include="include\Boxeador.h" />
     <ClInclude Include="include\Camera.h" />
     <ClInclude Include="include\CartelMamalon.h" />
     <ClInclude Include="include\CAttack.h" />
     <ClInclude Include="include\CJugador.h" />
+    <ClInclude Include="include\Karateca.h" />
     <ClInclude Include="include\Movimiento.h" />
     <ClInclude Include="include\Objetive.h" />
     <ClInclude Include="include\PlayManager.h" />

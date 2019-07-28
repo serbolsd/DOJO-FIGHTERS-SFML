@@ -81,5 +81,11 @@
     <ClInclude Include="include\CJugador.h">
       <Filter>Header</Filter>
     </ClInclude>
+    <ClInclude Include="include\Boxeador.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Karateca.h">
+      <Filter>Header</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
