@@ -43,6 +43,9 @@
     <ClCompile Include="Source\CAttack.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\CJugador.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Window.h">
@@ -73,6 +76,9 @@
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="include\Resources.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CJugador.h">
       <Filter>Header</Filter>
     </ClInclude>
   </ItemGroup>
